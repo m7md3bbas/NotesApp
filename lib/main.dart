@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:notesapp/Views/Widgets/CustomNotesItems.dart';
 import 'Views/NotesViews.dart';
 
 void main() {
