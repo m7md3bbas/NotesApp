@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
+import 'package:notesapp/Constant.dart';
 import 'package:notesapp/NoteModel/NoteModel.dart';
 import 'Views/NotesViews.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
 import 'dart:async';
@@ -15,8 +15,7 @@ Future<File> _getLocalFile() async {
 
 void main() async {
   await Hive.initFlutter();
-
-  await Hive.openBox('notes box');
+  await Hive.openBox(KHiveBox);
   Hive.registerAdapter(NoteModelAdapter());
   runApp(const NotesApp());
 }

@@ -1,0 +1,1 @@
+String KHiveBox = 'notes box';
